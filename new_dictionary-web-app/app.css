@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --color-dark:#2D2D2D;
+    --color-text-white:#fff;
+}
+
+body.dark-mode{
+    background-color: var(--color-dark);
+    color: var(--color-text-white);
+}
+.container{
+    
+    display:flex;
+    flex-direction:column;
+    padding:1rem;
+    margin:auto;
+    max-width:600px;
+    
+    
+}
+
+input{
+    
+    min-width: 0; 
+    height: 40px;
+    width: 300px; 
+    margin-top: 20px;
+    padding-left: 10px;
+    border-radius: 16px;
+    background: var(--F4F4F4, #F4F4F4);
+    background: url(images/iconoir.svg) no-repeat scroll 7px 7px;
+    background-position: 97%;
+
+    color: var(--2D2D2D, #2D2D2D);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border:1px solid #ccc;
+    outline:none;
+    
+    
+} 
+input.dark-mode{
+    
+    color: var(--color-text-white);
+    
+    
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+}
+button{
+    margin-top: 2rem;
+    margin-left: 6rem;
+    
+    height: 30px;
+    width: 100px;
+    background-color: rgba(0, 157, 255, 0.459);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color:#2D2D2D;
+    font-weight: 700;
+    cursor: pointer;
+   
+  
+}
+    
+
+.book{
+    width: 32px;
+    height: 36.5px;
+    flex-shrink: 0;
+}
+
+.group{
+    width: 79.993px;
+height: 20px;
+flex-shrink: 0;
+}
+
+h1{
+   margin-bottom: 2.5rem; 
+    
+}
+
+#app-title{
+    margin-bottom: 3rem;
+}
+
+#dictionaryData{
+    margin-top: 3rem;
+
+}
+.def-data{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.def-container{
+    display:flex;
+    gap:10px;
+}
+.bullet-point{
+    margin:0;
+}
+
+
+h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+        max-width: 100%; /* Make the container take full width */
+        display:flex;
+        
+    }
+
+    input {
+         
+         width: calc(100% - 20px); 
+         min-width: 200px; 
+         max-width: 400px; 
+         margin: 0 auto; /* Center the input */ /* Set a minimum width to prevent it from being too narrow */
+        
+    }
+    
+    #btn1{
+        width: 100%; 
+        max-width: 200px; /* Set a maximum width to avoid it becoming too wide */
+        margin: 0 auto; /* Center the button */
+        margin-top: 1rem;
+    }
+    
+
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+}
+    
+    
